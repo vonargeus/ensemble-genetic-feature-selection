@@ -1,1 +1,76 @@
 # ensemble-genetic-feature-selection
+🧬 Genetic Ensemble Feature Selection (GEFS)
+
+This project explores a hybrid approach to feature selection and model ensembling using a genetic algorithm framework. The goal is to jointly optimize feature subsets and model diversity under constrained settings, with a focus on imbalanced classification tasks.
+
+📌 Overview
+
+Traditional pipelines separate:
+
+feature selection
+model training
+ensembling
+
+GEFS integrates these into a single evolutionary process, where each candidate represents:
+
+a subset of features
+an assigned model type
+
+The system evolves populations of such candidates based on predictive performance and diversity.
+
+⚙️ Implementations
+
+The repository includes two versions:
+
+1. Baseline (Submitted Version)
+Fitness: F1 score + diversity
+Homogeneous & heterogeneous ensembles
+Majority voting or stacking
+Designed for academic clarity and reproducibility
+2. Extended Version (Exploratory)
+Evaluation-aware fitness (F1 + PR-AUC)
+Feature importance–guided search (ANOVA F-score)
+Controlled feature pool for stability
+Structural diversity via feature-mask novelty
+Improved validation split for more reliable selection
+
+This version reflects iterative improvements beyond the academic baseline.
+
+🧠 Models Used
+
+Base learners include:
+
+Decision Tree (DT)
+K-Nearest Neighbors (KNN)
+Logistic Regression (LR)
+Support Vector Machine (SVM)
+Multi-layer Perceptron (MLP)
+
+These are used both as standalone baselines and within ensemble configurations.
+
+🔬 Problem Setting
+Dataset: Online Shoppers Intention
+Task: Binary classification (imbalanced)
+Focus:
+F1-score
+PR-AUC (precision-recall sensitivity)
+Ensemble diversity
+🏗️ Pipeline
+Data preprocessing & feature engineering
+Candidate generation (feature masks + model types)
+Genetic evolution (selection, crossover, mutation)
+Fitness evaluation (performance + diversity)
+Final ensemble construction (voting / stacking)
+📊 Key Idea
+
+Rather than searching for a single optimal model, GEFS searches for a set of complementary models, each operating on different feature subsets, improving robustness under limited or noisy features.
+
+🚧 Notes
+The baseline version corresponds to the submitted academic project
+The extended version explores practical improvements and design trade-offs
+The project emphasizes system-level thinking over isolated model performance
+🔗 Repository Structure
+/baseline        # submitted academic version
+/extended        # improved experimental version
+/data            # dataset
+/notebooks       # experiments and analysis
