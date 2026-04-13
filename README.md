@@ -1,6 +1,6 @@
 🧬 Genetic Ensemble Feature Selection (GEFS)
 
-< br / > 
+<br />
 This project explores a hybrid approach to feature selection and model ensembling using a genetic algorithm framework. The goal is to jointly optimize feature subsets and model diversity under constrained settings, with a focus on imbalanced classification tasks.
 
 📌 Overview
@@ -19,7 +19,7 @@ an assigned model type
 The system evolves populations of such candidates based on predictive performance and diversity.
 
 ⚙️ Implementations
-
+<br />
 The repository includes two versions:
 
 1. Baseline (Submitted Version)
@@ -37,7 +37,7 @@ Improved validation split for more reliable selection
 This version reflects iterative improvements beyond the academic baseline.
 
 🧠 Models Used
-
+<br />
 Base learners include:
 
 Decision Tree (DT)
@@ -66,6 +66,7 @@ Final ensemble construction (voting / stacking)
 Rather than searching for a single optimal model, GEFS searches for a set of complementary models, each operating on different feature subsets, improving robustness under limited or noisy features.
 
 🚧 Notes
+<br />
 The baseline version corresponds to the submitted academic project
 The extended version explores practical improvements and design trade-offs
 The project emphasizes system-level thinking over isolated model performance
