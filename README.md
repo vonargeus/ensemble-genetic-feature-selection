@@ -1,6 +1,6 @@
-# ensemble-genetic-feature-selection
 🧬 Genetic Ensemble Feature Selection (GEFS)
 
+< br / > 
 This project explores a hybrid approach to feature selection and model ensembling using a genetic algorithm framework. The goal is to jointly optimize feature subsets and model diversity under constrained settings, with a focus on imbalanced classification tasks.
 
 📌 Overview
